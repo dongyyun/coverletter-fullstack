@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 
+let styles = {
+    marginT: '10px',
+    fontWeight:'bold',
+    textAlign: 'center',
+    fontSize: '30px',
+    color: 'white',
+
+};
+
 class HeaderComponent extends Component {
     constructor(props) {
         super(props)
@@ -13,7 +22,7 @@ class HeaderComponent extends Component {
             <div>
                 <header>
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                        <div><a href="https://localhost:3000" className="navbar-brand"> CoverLetter</a></div>
+                        <div style={styles}> CoverLetter</div>
                     </nav>
                 </header>
 

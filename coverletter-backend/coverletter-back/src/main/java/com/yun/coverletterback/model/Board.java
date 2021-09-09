@@ -1,5 +1,4 @@
 package com.yun.coverletterback.model;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,23 +24,50 @@ public class Board {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int number;
 
-    @Column(name = "type")
-    private String type;
+    @Column(name = "school_period")
+    private String schoolPeriod;
 
-    @Column(name = "title")
-    private String title;
+    @Column(name = "school_type")
+    private String schoolType;
 
-    @Column(name = "contents")
-    private String contents;
+    @Column(name = "school_name")
+    private String schoolName;
 
-    @Column(name = "member_no")
-    private int memberNo;
+    @Column(name = "company_name")
+    private String companyName;
 
-    @Column(name = "likes")
-    private int likes;
+    @Column(name = "school_major")
+    private String schoolMajor;
 
-    @Column(name = "counts")
-    private int counts;
+    @Column(name = "school_grade")
+    private String schoolGrade;
+
+    @Column(name = "company_period")
+    private String companyPeriod;
+
+    @Column(name = "company_reason")
+    private String companyReason;
+
+    @Column(name = "company_part")
+    private String companyPart;
+
+    @Column(name = "cert_period")
+    private String certPeriod;
+
+    @Column(name = "company_grade")
+    private String companyGrade;
+
+    @Column(name = "cert_type")
+    private String certType;
+
+    @Column(name = "cert_name")
+    private String certName;
+
+    @Column(name = "cert_provide")
+    private String certProvide;
+
+    @Column(name = "cert_grade")
+    private String certGrade;
 
 
 

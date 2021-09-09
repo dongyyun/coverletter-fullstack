@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -15,11 +17,13 @@ import org.hibernate.annotations.DynamicUpdate;
 @Table(name = "board")
 @DynamicInsert
 @DynamicUpdate
+@Getter
+@Setter
 public class Board {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer number;
+    private int number;
 
     @Column(name = "type")
     private String type;
@@ -30,14 +34,14 @@ public class Board {
     @Column(name = "contents")
     private String contents;
 
-    @Column(name = "members_no")
-    private Integer memberNo;
+    @Column(name = "member_no")
+    private int memberNo;
 
     @Column(name = "likes")
-    private Integer likes;
+    private int likes;
 
     @Column(name = "counts")
-    private Integer counts;
+    private int counts;
 
 
 

@@ -1,28 +1,29 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import BoardService from '../service/BoardService';
 
 class ListBoardComponent extends Component {
     constructor(props) {
         super(props)
-        // # 1.
+
         this.state = {
             boards: []
         }
 
     }
 
-    // # 2.
+
     componentDidMount() {
         BoardService.getBoards().then((res) => {
             this.setState({boards: res.data});
         });
     }
 
-    // # 3.
+
     render() {
         return (
             <div>
-                <h2 className="text-center">Boards List</h2>
+                <h2 className="text-center">이동윤</h2>
+
                 <div className="row">
                     <table className="table table-striped table-bordered">
                         <thead>

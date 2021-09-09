@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/board")
 public class BoardController {
 
     @Autowired
@@ -22,7 +22,7 @@ public class BoardController {
 
 
     // get all board
-    @GetMapping("/board")
+    @GetMapping
     public List<Board> getAllBoards() {
 
         return boardService.getAllBoard();
